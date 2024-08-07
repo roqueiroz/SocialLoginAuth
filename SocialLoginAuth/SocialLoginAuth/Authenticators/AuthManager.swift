@@ -55,7 +55,7 @@ class AuthManager: ObservableObject {
     
     func signOut() async throws {
         if let user = Auth.auth().currentUser {
-            GoogleSignInManager.shared.signOutFromGoogle()
+           // GoogleSignInManager.shared.signOutFromGoogle()
             try Auth.auth().signOut()
             self.authState = .signedOut
         }
