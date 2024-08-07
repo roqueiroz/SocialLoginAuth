@@ -4,6 +4,9 @@
 
 ## User settings
 xcuserdata/
+SocialLoginAuth/.DS_Store
+SocialLoginAuth/SocialLoginAuth/.DS_Store
+*/xcshareddata/*
 
 ## Firebase configs
 SocialLoginAuth/SocialLoginAuth/Resources/Plist/*

@@ -14,7 +14,6 @@ struct ContentView: View {
         VStack {
             VStack(spacing: 16) {
                 switch authManager.authState {
-                        
                     case .signedIn:
                         HomeView()
                         
@@ -24,10 +23,10 @@ struct ContentView: View {
                 }
             }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(AuthManager())
 }
