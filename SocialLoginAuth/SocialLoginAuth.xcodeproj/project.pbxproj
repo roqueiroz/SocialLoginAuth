@@ -20,14 +20,8 @@
 		30D2FBA62C63BE0C00A4E1A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBA52C63BE0C00A4E1A8 /* HomeView.swift */; };
 		30D2FBA82C63BE5400A4E1A8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBA72C63BE5400A4E1A8 /* LoginView.swift */; };
 		30D2FBAA2C63C2E000A4E1A8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBA92C63C2E000A4E1A8 /* RegisterView.swift */; };
-<<<<<<< HEAD
-		30D2FBAC2C63E86100A4E1A8 /* GoogleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBAB2C63E86100A4E1A8 /* GoogleSignInManager.swift */; };
-		30D2FBAF2C63FA1A00A4E1A8 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBAE2C63FA1A00A4E1A8 /* SideMenuView.swift */; };
-		30D2FBB12C63FB1500A4E1A8 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBB02C63FB1500A4E1A8 /* SideMenuHeaderView.swift */; };
-=======
 		F008326A2C63EEB400D5FC56 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00832692C63EEB400D5FC56 /* CustomTextfield.swift */; };
 		F008326C2C63F6CA00D5FC56 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008326B2C63F6CA00D5FC56 /* CustomButton.swift */; };
->>>>>>> 82cac90dcbb2616336114b3d65de1138383407fb
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,14 +37,8 @@
 		30D2FBA52C63BE0C00A4E1A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		30D2FBA72C63BE5400A4E1A8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		30D2FBA92C63C2E000A4E1A8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		30D2FBAB2C63E86100A4E1A8 /* GoogleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
-		30D2FBAE2C63FA1A00A4E1A8 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
-		30D2FBB02C63FB1500A4E1A8 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
-=======
 		F00832692C63EEB400D5FC56 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
 		F008326B2C63F6CA00D5FC56 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
->>>>>>> 82cac90dcbb2616336114b3d65de1138383407fb
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

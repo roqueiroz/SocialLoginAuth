@@ -38,19 +38,19 @@ struct LoginView: View {
     }
     
     private func signInWithGoogle() async {
-        do {
-            guard let user = try await GoogleSignInManager.shared.signInWithGoogle() else {
-                return
-            }
-            
-            guard let result = try await authManager.googleAuth(user) else {
-                print("Google auth failed")
-                return
-            }
-            
-        } catch {
-            return
-        }
+//        do {
+//            guard let user = try await GoogleSignInManager.shared.signInWithGoogle() else {
+//                return
+//            }
+//            
+//            guard let result = try await authManager.googleAuth(user) else {
+//                print("Google auth failed")
+//                return
+//            }
+//            
+//        } catch {
+//            return
+//        }
     }
 }
 
