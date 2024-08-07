@@ -5,6 +5,10 @@
 ## User settings
 xcuserdata/
 
+## Firebase configs
+SocialLoginAuth/SocialLoginAuth/Resources/Plist/*
+
+
 ## Obj-C/Swift specific
 *.hmap
 
