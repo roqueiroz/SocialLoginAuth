@@ -20,6 +20,9 @@
 		30D2FBA62C63BE0C00A4E1A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBA52C63BE0C00A4E1A8 /* HomeView.swift */; };
 		30D2FBA82C63BE5400A4E1A8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBA72C63BE5400A4E1A8 /* LoginView.swift */; };
 		30D2FBAA2C63C2E000A4E1A8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBA92C63C2E000A4E1A8 /* RegisterView.swift */; };
+		30D2FBAC2C63E86100A4E1A8 /* GoogleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBAB2C63E86100A4E1A8 /* GoogleSignInManager.swift */; };
+		30D2FBAF2C63FA1A00A4E1A8 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBAE2C63FA1A00A4E1A8 /* SideMenuView.swift */; };
+		30D2FBB12C63FB1500A4E1A8 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBB02C63FB1500A4E1A8 /* SideMenuHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		30D2FBA52C63BE0C00A4E1A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		30D2FBA72C63BE5400A4E1A8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		30D2FBA92C63C2E000A4E1A8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		30D2FBAB2C63E86100A4E1A8 /* GoogleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
+		30D2FBAE2C63FA1A00A4E1A8 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		30D2FBB02C63FB1500A4E1A8 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				30D2FB992C63AD7300A4E1A8 /* AuthManager.swift */,
+				30D2FBAB2C63E86100A4E1A8 /* GoogleSignInManager.swift */,
 			);
 			path = Authenticators;
 			sourceTree = "<group>";
@@ -134,11 +141,21 @@
 		30D2FBA42C63BDFD00A4E1A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30D2FBAD2C63FA0500A4E1A8 /* Componets */,
 				30D2FBA52C63BE0C00A4E1A8 /* HomeView.swift */,
 				30D2FBA72C63BE5400A4E1A8 /* LoginView.swift */,
 				30D2FBA92C63C2E000A4E1A8 /* RegisterView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		30D2FBAD2C63FA0500A4E1A8 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				30D2FBAE2C63FA1A00A4E1A8 /* SideMenuView.swift */,
+				30D2FBB02C63FB1500A4E1A8 /* SideMenuHeaderView.swift */,
+			);
+			path = Componets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +242,10 @@
 				30D2FBA22C63B21000A4E1A8 /* Extensions+Enums.swift in Sources */,
 				304E42042C639CB500696B02 /* ContentView.swift in Sources */,
 				30D2FBAA2C63C2E000A4E1A8 /* RegisterView.swift in Sources */,
+				30D2FBAC2C63E86100A4E1A8 /* GoogleSignInManager.swift in Sources */,
+				30D2FBB12C63FB1500A4E1A8 /* SideMenuHeaderView.swift in Sources */,
 				30D2FB9A2C63AD7300A4E1A8 /* AuthManager.swift in Sources */,
+				30D2FBAF2C63FA1A00A4E1A8 /* SideMenuView.swift in Sources */,
 				30D2FBA62C63BE0C00A4E1A8 /* HomeView.swift in Sources */,
 				304E42022C639CB500696B02 /* SocialLoginAuthApp.swift in Sources */,
 			);
@@ -364,6 +384,7 @@
 				DEVELOPMENT_TEAM = 4U7B2G7Z4N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SocialLoginAuth/Resources/Plist/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Social Login";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -394,6 +415,7 @@
 				DEVELOPMENT_TEAM = 4U7B2G7Z4N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SocialLoginAuth/Resources/Plist/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Social Login";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -9,6 +9,7 @@ import SwiftUI
 import GoogleSignInSwift
 
 struct LoginView: View {
+    @EnvironmentObject var authManager: AuthManager
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -17,7 +18,9 @@ struct LoginView: View {
                 Spacer()
                 
                 GoogleSignInButton {
-                   
+                    Task {
+                        await signInWithGoogle()
+                    }
                 }
                 .frame(width: 280, height: 45, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -31,6 +34,22 @@ struct LoginView: View {
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(colorScheme == .light ? .gray.opacity(0.8) : .gray)
+        }
+    }
+    
+    private func signInWithGoogle() async {
+        do {
+            guard let user = try await GoogleSignInManager.shared.signInWithGoogle() else {
+                return
+            }
+            
+            guard let result = try await authManager.googleAuth(user) else {
+                print("Google auth failed")
+                return
+            }
+            
+        } catch {
+            return
         }
     }
 }

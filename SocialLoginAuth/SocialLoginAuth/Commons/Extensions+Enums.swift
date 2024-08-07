@@ -7,10 +7,10 @@
 
 import Foundation
 
-enum AuthState {
-    case anonymous
-    case signedIn
-    case signedOut
+enum AuthState: String {
+    case anonymous = "Anonymous"
+    case signedIn = "SignedIn"
+    case signedOut = "SignedOut"
 }
 
 enum SignInProvider: String {

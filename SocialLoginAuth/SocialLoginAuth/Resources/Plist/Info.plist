@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Info.plist
-   SocialLoginAuth
-
-   Created by Rodrigo Queiroz on 07/08/24.
-   Copyright (c) 2024 ___ORGANIZATIONNAME___. All rights reserved.
--->
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.196959661310-1rucsuhndg3lmme0l6jsgd2qcdvobq8h</string>
+			</array>
+		</dict>
+	</array>
+	<key>GIDClientID</key>
+	<string>196959661310-1rucsuhndg3lmme0l6jsgd2qcdvobq8h.apps.googleusercontent.com</string>
+</dict>
 </plist>

@@ -30,6 +30,55 @@ class AuthManager: ObservableObject {
             await verifyProvider()
         }
     }
+    
+    func googleAuth(_ user: GIDGoogleUser) async throws -> AuthDataResult? {
+        do {
+            guard let token = user.idToken?.tokenString else { return nil }
+            let credentials = GoogleAuthProvider.credential(withIDToken: token,
+                                                            accessToken: user.accessToken.tokenString)
+            let result = try await Auth.auth().signIn(with: credentials)
+            self.user = result.user
+            
+            guard let authUser = self.user else {
+                self.authState = .signedOut
+                return nil
+            }
+            
+            self.authState = authUser.isAnonymous ? .anonymous : .signedIn
+            
+            return result
+            
+        } catch {
+            throw error
+        }
+    }
+    
+    func signOut() async throws {
+        if let user = Auth.auth().currentUser {
+            GoogleSignInManager.shared.signOutFromGoogle()
+            try Auth.auth().signOut()
+            self.authState = .signedOut
+        }
+    }
+    
+    func getUserName() -> String {
+        if authState == .signedIn {
+            guard let user else { return AuthState.anonymous.rawValue}
+            return user.displayName ?? ""
+        }
+        
+        return ""
+    }
+    
+    func getUserEmail() -> String {
+        if authState == .signedIn {
+            guard let user else { return AuthState.anonymous.rawValue}
+            return user.email ?? ""
+        }
+        
+        return ""
+    }
+    
 }
 
 private extension AuthManager {
@@ -54,7 +103,7 @@ private extension AuthManager {
             if isAppleCredentialRevoked && isGoogleCredentialRevoked {
                 if authState != .signedIn {
                     do {
-                        //To Do - implementar func de deslogar
+                        try await self.signOut()
                     } catch {
                         print("AuthError: \(error)")
                     }
