@@ -6,7 +6,7 @@
 xcuserdata/
 SocialLoginAuth/.DS_Store
 SocialLoginAuth/SocialLoginAuth/.DS_Store
-*/project.xcworkspace/xcshareddata/*
+
 
 ## Firebase configs
 SocialLoginAuth/SocialLoginAuth/Resources/Plist/*
