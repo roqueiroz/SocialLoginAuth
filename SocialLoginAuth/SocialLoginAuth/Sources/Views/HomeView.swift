@@ -17,22 +17,22 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack {
-//            ZStack {
-//                SideMenuView(isShowing: $showMenu)
-//            }
-//            .navigationTitle("Home")
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
-//            .toolbar {
-//                ToolbarItem(placement: .topBarLeading) {
-//                    Button(action: {
-//                        showMenu.toggle()
-//                    }, label: {
-//                        Image(systemName: "line.3.horizontal")
-//                    })
-//                }
-//            }
-//            .foregroundColor(colorSchema == .light ? .black : .white)
+            ZStack {
+                SideMenuView(isShowing: $showMenu)
+            }
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
+                        showMenu.toggle()
+                    }, label: {
+                        Image(systemName: "line.3.horizontal")
+                    })
+                }
+            }
+            .foregroundColor(colorSchema == .light ? .black : .white)
             
             if !showMenu {
                 VStack {

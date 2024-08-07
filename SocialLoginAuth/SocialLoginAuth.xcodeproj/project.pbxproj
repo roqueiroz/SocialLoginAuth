@@ -20,6 +20,9 @@
 		30D2FBA62C63BE0C00A4E1A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBA52C63BE0C00A4E1A8 /* HomeView.swift */; };
 		30D2FBA82C63BE5400A4E1A8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBA72C63BE5400A4E1A8 /* LoginView.swift */; };
 		30D2FBAA2C63C2E000A4E1A8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBA92C63C2E000A4E1A8 /* RegisterView.swift */; };
+		30D2FBB42C641A0900A4E1A8 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBB22C641A0900A4E1A8 /* SideMenuHeaderView.swift */; };
+		30D2FBB52C641A0900A4E1A8 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBB32C641A0900A4E1A8 /* SideMenuView.swift */; };
+		30D2FBB72C641A3900A4E1A8 /* GoogleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2FBB62C641A3900A4E1A8 /* GoogleSignInManager.swift */; };
 		F008326A2C63EEB400D5FC56 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00832692C63EEB400D5FC56 /* CustomTextfield.swift */; };
 		F008326C2C63F6CA00D5FC56 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008326B2C63F6CA00D5FC56 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +40,9 @@
 		30D2FBA52C63BE0C00A4E1A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		30D2FBA72C63BE5400A4E1A8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		30D2FBA92C63C2E000A4E1A8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		30D2FBB22C641A0900A4E1A8 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
+		30D2FBB32C641A0900A4E1A8 /* SideMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		30D2FBB62C641A3900A4E1A8 /* GoogleSignInManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
 		F00832692C63EEB400D5FC56 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
 		F008326B2C63F6CA00D5FC56 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,8 +120,8 @@
 		30D2FB962C63ACAB00A4E1A8 /* Authenticators */ = {
 			isa = PBXGroup;
 			children = (
+				30D2FBB62C641A3900A4E1A8 /* GoogleSignInManager.swift */,
 				30D2FB992C63AD7300A4E1A8 /* AuthManager.swift */,
-				30D2FBAB2C63E86100A4E1A8 /* GoogleSignInManager.swift */,
 			);
 			path = Authenticators;
 			sourceTree = "<group>";
@@ -150,6 +156,8 @@
 		F00832682C63EE9B00D5FC56 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				30D2FBB22C641A0900A4E1A8 /* SideMenuHeaderView.swift */,
+				30D2FBB32C641A0900A4E1A8 /* SideMenuView.swift */,
 				F00832692C63EEB400D5FC56 /* CustomTextfield.swift */,
 				F008326B2C63F6CA00D5FC56 /* CustomButton.swift */,
 			);
@@ -240,10 +248,12 @@
 				30D2FBA22C63B21000A4E1A8 /* Extensions+Enums.swift in Sources */,
 				F008326C2C63F6CA00D5FC56 /* CustomButton.swift in Sources */,
 				304E42042C639CB500696B02 /* ContentView.swift in Sources */,
+				30D2FBB52C641A0900A4E1A8 /* SideMenuView.swift in Sources */,
 				30D2FBAA2C63C2E000A4E1A8 /* RegisterView.swift in Sources */,
+				30D2FBB42C641A0900A4E1A8 /* SideMenuHeaderView.swift in Sources */,
 				F008326A2C63EEB400D5FC56 /* CustomTextfield.swift in Sources */,
+				30D2FBB72C641A3900A4E1A8 /* GoogleSignInManager.swift in Sources */,
 				30D2FB9A2C63AD7300A4E1A8 /* AuthManager.swift in Sources */,
-				30D2FBAF2C63FA1A00A4E1A8 /* SideMenuView.swift in Sources */,
 				30D2FBA62C63BE0C00A4E1A8 /* HomeView.swift in Sources */,
 				304E42022C639CB500696B02 /* SocialLoginAuthApp.swift in Sources */,
 			);
