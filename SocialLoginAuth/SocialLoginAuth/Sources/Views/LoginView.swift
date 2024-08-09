@@ -14,38 +14,66 @@ struct LoginView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
-        NavigationStack {
-            VStack(spacing: 16) { 
-                Spacer()
-                
-                //MARK: - Apple Auth
-                SignInWithAppleButton(
-                    onRequest: { request in },
-                    onCompletion: { result in }
-                )
-                .signInWithAppleButtonStyle(.black)
-                .frame(width: 280, height: 40, alignment: .center)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-                
-                //MARK: - Google Auth
-                GoogleSignInButton {
-                    Task {
-                        await signInWithGoogle()
-                    }
-                }
-                .frame(width: 280, height: 40, alignment: .center)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-                
-                NavigationLink(destination: RegisterView()) {
-                    Text("Usar e-mail e senha")
-                        .foregroundStyle(.white)
-                        .font(.body.bold())
+        VStack() {
+            Spacer()
+            
+            //MARK: - Apple Auth
+            SignInWithAppleButton(
+                onRequest: { request in },
+                onCompletion: { result in }
+            )
+            .signInWithAppleButtonStyle(.black)
+            .frame(width: 280, height: 40, alignment: .center)
+            
+            //MARK: - Google Auth
+            GoogleSignInButton(viewModel: .init(scheme: .dark, style: .wide)) {
+                Task {
+                    await signInWithGoogle()
                 }
             }
-            .padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.red.opacity(0.8))
+            .frame(width: 280, height: 55, alignment: .center)
+            
+            NavigationLink(destination: RegisterView()) {
+                Text("Usar e-mail e senha")
+                //                    .foregroundStyle(.white)
+                    .foregroundStyle(.gray)
+                    .font(.body.bold())
+            }
+            
         }
+        
+        //        NavigationStack {
+        //            VStack(spacing: 16) {
+        //                Spacer()
+        //
+        //                //MARK: - Apple Auth
+        //                SignInWithAppleButton(
+        //                    onRequest: { request in },
+        //                    onCompletion: { result in }
+        //                )
+        //                .signInWithAppleButtonStyle(.black)
+        //                .frame(width: 280, height: 40, alignment: .center)
+        //                .clipShape(RoundedRectangle(cornerRadius: 8))
+        //
+        //                //MARK: - Google Auth
+        //                GoogleSignInButton {
+        //                    Task {
+        //                        await signInWithGoogle()
+        //                    }
+        //                }
+        //                .frame(width: 280, height: 40, alignment: .center)
+        //                .clipShape(RoundedRectangle(cornerRadius: 8))
+        //
+        //                NavigationLink(destination: RegisterView()) {
+        //                    Text("Usar e-mail e senha")
+        //                        .foregroundStyle(.white)
+        //                        .font(.body.bold())
+        //                }
+        //            }
+        //            .padding()
+        //            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        //            //.background(.red.opacity(0.8))
+        //        }
     }
     
     private func signInWithGoogle() async {

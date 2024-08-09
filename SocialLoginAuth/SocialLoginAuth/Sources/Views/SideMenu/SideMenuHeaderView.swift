@@ -21,12 +21,15 @@ struct SideMenuHeaderView: View {
                 .padding(.vertical)
             
             VStack(alignment: .leading, spacing: 6) {
-                Text(authManager.getUserName())
+                //Text(authManager.getUserName())
+                Text("Rodrigo")
                     .font(.subheadline)
                     .foregroundStyle(.black)
-                Text(authManager.getUserEmail())
+                //Text(authManager.getUserEmail())
+                Text("rqueiroz@gmail.com")
                     .font(.footnote)
                     .foregroundStyle(.gray)
+                    .tint(.gray)
             }
         }
     }

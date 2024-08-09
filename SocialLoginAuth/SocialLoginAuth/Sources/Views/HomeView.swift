@@ -16,37 +16,50 @@ struct HomeView: View {
     
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                SideMenuView(isShowing: $showMenu)
-            }
-            .navigationTitle("Home")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button(action: {
-                        showMenu.toggle()
-                    }, label: {
-                        Image(systemName: "line.3.horizontal")
-                    })
-                }
-            }
-            .foregroundColor(colorSchema == .light ? .black : .white)
-            
-            if !showMenu {
-                VStack {
-                    Text("teste tete ")
-                }
-                .background(.red)
-                .padding()
-                
-                
-                Spacer()
-            }
-            
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
         }
+        .navigationTitle("Home")
+        .navigationBarTitleDisplayMode(.inline)
+        //.toolbar(showMenu ? .hidden : .visible, for: .)
         
+//        ZStack {
+//            //SideMenuView(isShowing: $showMenu)
+//            
+//            VStack {
+//                Image(systemName: "globe")
+//                    .imageScale(.large)
+//                    .foregroundStyle(.tint)
+//                Text("Hello, world!")
+//            }
+//            
+//        }
+//        .navigationTitle("Home")
+//        .navigationBarTitleDisplayMode(.inline)
+        
+        /*
+         NavigationStack {
+         ZStack {
+         SideMenuView(isShowing: $showMenu)
+         }
+         .navigationTitle("Home")
+         .navigationBarTitleDisplayMode(.inline)
+         .toolbar(showMenu ? .hidden : .visible, for: .navigationBar)
+         .toolbar {
+         ToolbarItem(placement: .topBarLeading) {
+         Button(action: {
+         showMenu.toggle()
+         }, label: {
+         Image(systemName: "line.3.horizontal")
+         })
+         }
+         }
+         .foregroundColor(.black)
+         }
+         */
         
     }
 }
